@@ -1021,7 +1021,6 @@ pub fn check_update_broker_process() -> ResultType<()> {
         "
         chcp 65001
         taskkill /F /IM {process_exe}
-		taskkill /F /IM rustdesk.exe{filter}
         copy /Y \"{origin_process_exe}\" \"{cur_exe}\"
     ",
         cur_exe = cur_exe.to_string_lossy(),
